@@ -15,7 +15,7 @@ namespace Library.Core.Models
 
         public Author Author { get; set; }
 
-        public int SeriesId { get; set; }
+        public int? SeriesId { get; set; }
 
         public Series Series { get; set; }
     }
