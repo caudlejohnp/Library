@@ -13,17 +13,18 @@ namespace Library.ApiModels
             return new AuthorModel
             {
                 Id = author.Id,
-                FullName = author.FirstName + " " + author.LastName
+                FirstName = author.FirstName,
+                LastName = author.LastName
             };
         }
 
         public static Author ToDomainModel(this AuthorModel authorModel)
         {
-            return new Author
-            {
-                Id = authorModel.Id,
-                FirstName = authorModel.FirstName,
-                LastName = authorModel.LastName,
+        return new Author
+        {
+            Id = authorModel.Id,
+            FirstName = authorModel.FirstName,
+            LastName = authorModel.LastName
             };
         }
 
