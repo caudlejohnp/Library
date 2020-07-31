@@ -10,8 +10,6 @@ namespace Library.Core.Models
 
         public string SeriesName { get; set; }
 
-        public int SeriesNumber { get; set; }
-
         public int AuthorId { get; set; }
 
         public Author Authors { get; set; }

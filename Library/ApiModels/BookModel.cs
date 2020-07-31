@@ -18,6 +18,8 @@ namespace Library.ApiModels
 
         public int? SeriesId { get; set; }
 
+        public int? SeriesNumber { get; set; }
+
         public IEnumerable<Series> Series { get; set; }
     }
 }

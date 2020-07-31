@@ -15,7 +15,8 @@ namespace Library.ApiModels
                 Id = book.Id,
                 Title = book.Title,
                 AuthorId = book.AuthorId,
-                SeriesId = book.SeriesId
+                SeriesId = book.SeriesId,
+                SeriesNumber = book.SeriesNumber
             };
         }
 
@@ -26,7 +27,8 @@ namespace Library.ApiModels
                 Id = bookModel.Id,
                 Title = bookModel.Title,
                 AuthorId = bookModel.AuthorId,
-                SeriesId = bookModel.SeriesId
+                SeriesId = bookModel.SeriesId,
+                SeriesNumber = bookModel.SeriesNumber
             };
         }
 

@@ -49,7 +49,7 @@ namespace Library.Infrastructure.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Title = table.Column<string>(nullable: true),
                     AuthorId = table.Column<int>(nullable: false),
-                    SeriesId = table.Column<int>(nullable: false)
+                    SeriesId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -65,7 +65,7 @@ namespace Library.Infrastructure.Migrations
                         column: x => x.SeriesId,
                         principalTable: "Series",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

@@ -17,6 +17,8 @@ namespace Library.Core.Models
 
         public int? SeriesId { get; set; }
 
+        public int? SeriesNumber { get; set; }
+
         public Series Series { get; set; }
     }
 }

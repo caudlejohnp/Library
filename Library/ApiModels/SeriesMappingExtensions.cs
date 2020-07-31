@@ -14,7 +14,7 @@ namespace Library.ApiModels
             {
                 Id = series.Id,
                 SeriesName = series.SeriesName,
-                SeriesNumber = series.SeriesNumber
+                AuthorId = series.AuthorId
             };
         }
 
@@ -23,8 +23,8 @@ namespace Library.ApiModels
             return new Series
             {
                 Id = seriesModel.Id,
-                SeriesNumber = seriesModel.SeriesNumber,
-                SeriesName = seriesModel.SeriesName
+                SeriesName = seriesModel.SeriesName,
+                AuthorId = seriesModel.AuthorId
             };
         }
 

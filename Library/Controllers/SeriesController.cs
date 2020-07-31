@@ -15,7 +15,7 @@ namespace Library.Controllers
     public class SeriesController : ControllerBase
     {
 
-        private ISeriesService _seriesService;
+        private readonly ISeriesService _seriesService;
 
         public SeriesController(ISeriesService seriesService)
         {
@@ -50,7 +50,7 @@ namespace Library.Controllers
 
         // PUT api/<SeriesController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] SeriesModel updatedSeries)
+        public IActionResult Put([FromBody] SeriesModel updatedSeries)
         {
             var series = _seriesService.Update(updatedSeries.ToDomainModel());
             if (series == null) BadRequest();
