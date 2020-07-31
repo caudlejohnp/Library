@@ -16,7 +16,7 @@ namespace Library.ApiModels
 
         public Author Author { get; set; }
 
-        public int SeriesId { get; set; }
+        public int? SeriesId { get; set; }
 
         public IEnumerable<Series> Series { get; set; }
     }

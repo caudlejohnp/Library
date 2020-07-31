@@ -14,7 +14,7 @@ namespace Library.Infrastructure.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder myBuilder)
         {
-            myBuilder.UseSqlite("Data Source = Books.db");
+            myBuilder.UseSqlite("Data Source = ../Library/Library.Infrastucture/Books.db");
         }
     }
 }
