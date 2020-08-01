@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Library.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200731172726_InitialCreate")]
+    [Migration("20200731235032_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,6 +47,9 @@ namespace Library.Infrastructure.Migrations
                     b.Property<int?>("SeriesId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("SeriesNumber")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
@@ -70,9 +73,6 @@ namespace Library.Infrastructure.Migrations
 
                     b.Property<string>("SeriesName")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("SeriesNumber")
-                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 

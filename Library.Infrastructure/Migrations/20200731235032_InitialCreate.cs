@@ -27,7 +27,6 @@ namespace Library.Infrastructure.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     SeriesName = table.Column<string>(nullable: true),
-                    SeriesNumber = table.Column<int>(nullable: false),
                     AuthorId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -49,7 +48,8 @@ namespace Library.Infrastructure.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Title = table.Column<string>(nullable: true),
                     AuthorId = table.Column<int>(nullable: false),
-                    SeriesId = table.Column<int>(nullable: true)
+                    SeriesId = table.Column<int>(nullable: true),
+                    SeriesNumber = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {

@@ -45,6 +45,9 @@ namespace Library.Infrastructure.Migrations
                     b.Property<int?>("SeriesId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("SeriesNumber")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
@@ -68,9 +71,6 @@ namespace Library.Infrastructure.Migrations
 
                     b.Property<string>("SeriesName")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("SeriesNumber")
-                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
